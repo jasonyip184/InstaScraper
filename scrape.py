@@ -9,8 +9,8 @@ from flask import Flask, render_template, flash, request, send_file
 from pprint import pprint
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from tkinter import *
-from tkinter import messagebox
+# from tkinter import *
+# from tkinter import messagebox
 from urllib.request import urlopen
 
 
