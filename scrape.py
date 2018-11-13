@@ -153,6 +153,7 @@ def cli_run():
     posts_threshold.grid(column=1, row=5)
 
     def run():
+<<<<<<< HEAD
         global this_url, this_tagged_threshold, this_followers_threshold, this_following_threshold, this_posts_threshold
         this_url = str(url.get())
         this_tagged_threshold = int(tagged_threshold.get())
@@ -163,6 +164,7 @@ def cli_run():
         
         # main function
         find_winner(this_url,this_tagged_threshold,this_followers_threshold,this_following_threshold,this_posts_threshold)
+=======
 
         new_window = Tk()
         lbl = Label(new_window, text="Complete \n \n Find results.csv in same folder as app.exe")
@@ -176,4 +178,7 @@ def cli_run():
     btn.grid(column=3, row=6)
     window.mainloop()
     
+<<<<<<< HEAD
 cli_run()
+=======
+>>>>>>> 25dc577842c5e3d803ea05618a77d121723d6dfa
