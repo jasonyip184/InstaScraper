@@ -9,8 +9,8 @@ from flask import Flask, render_template, flash, request, send_file
 from pprint import pprint
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-# from tkinter import *
-# from tkinter import messagebox
+from tkinter import *
+from tkinter import messagebox
 from urllib.request import urlopen
 
 
@@ -153,16 +153,16 @@ def cli_run():
     posts_threshold.grid(column=1, row=5)
 
     def run():
-        global url, tagged_threshold, followers_threshold, following_threshold, posts_threshold
-        url = str(url.get())
-        tagged_threshold = int(tagged_threshold.get())
-        followers_threshold = int(followers_threshold.get())
-        following_threshold = int(following_threshold.get())
-        posts_threshold = int(posts_threshold.get())
+        global this_url, this_tagged_threshold, this_followers_threshold, this_following_threshold, this_posts_threshold
+        this_url = str(url.get())
+        this_tagged_threshold = int(tagged_threshold.get())
+        this_followers_threshold = int(followers_threshold.get())
+        this_following_threshold = int(following_threshold.get())
+        this_posts_threshold = int(posts_threshold.get())
         window.destroy()
         
         # main function
-        find_winner(url,tagged_threshold,followers_threshold,following_threshold,posts_threshold)
+        find_winner(this_url,this_tagged_threshold,this_followers_threshold,this_following_threshold,this_posts_threshold)
 
         new_window = Tk()
         lbl = Label(new_window, text="Complete \n \n Find results.csv in same folder as app.exe")
@@ -176,3 +176,4 @@ def cli_run():
     btn.grid(column=3, row=6)
     window.mainloop()
     
+cli_run()
