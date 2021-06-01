@@ -33,7 +33,7 @@ selenium==3.141.0
 six==1.11.0
 tornado==5.1.1
 tweepy==3.6.0
-urllib3==1.23
+urllib3==1.26.5
 Werkzeug==0.14.1
 wincertstore==0.2
 ws4py==0.5.1
