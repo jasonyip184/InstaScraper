@@ -15,7 +15,7 @@ lxml==4.2.5
 macholib==1.11
 MarkupSafe==1.1.0
 matplotlib==3.0.0
-numpy==1.15.2
+numpy==1.22.0
 oauthlib==2.1.0
 pefile==2018.8.8
 PyAlgoTrade==0.20
